@@ -1,3 +1,3 @@
 'use client';
 
-export * from './dist/client.js';
+export { BolhaThemeProvider, useBolhaTheme, ThemeToggle, VoteBar } from './dist/client.js';

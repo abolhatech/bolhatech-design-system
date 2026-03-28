@@ -1,6 +1,6 @@
 {
   "name": "bolhatech-design-system",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Design system React do ecossistema AbolhaTech — visual limpo, Inter, sem glassmorphism.",
   "license": "MIT",
   "type": "module",
