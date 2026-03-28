@@ -459,6 +459,11 @@ jobs:
 
 ## Changelog
 
+### 0.2.1 — Fix client boundary
+
+**Bugfix**
+- Corrigido `export *` em `client.js` — Next.js App Router não suporta `export *` em arquivos com `'use client'`. Substituído por named exports explícitos.
+
 ### 0.2.0 — Redesign visual completo
 
 **Breaking changes**
