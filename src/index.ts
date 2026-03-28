@@ -1,4 +1,4 @@
-export { bolhaTokens } from './tokens';
+export { bolhaTokens, getCommunityColor, getCommunityBg } from './tokens';
 export {
   BolhaThemeProvider,
   useBolhaTheme,

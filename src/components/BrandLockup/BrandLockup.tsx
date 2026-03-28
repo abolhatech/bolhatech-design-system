@@ -9,8 +9,8 @@ export type BrandLockupProps = React.HTMLAttributes<HTMLDivElement> & {
 
 export function BrandLockup({
   className,
-  subtitle = 'As principais notícias de tecnologia do dia',
-  title = 'AbolhaTech',
+  subtitle,
+  title = 'abolhatech',
   ...props
 }: BrandLockupProps) {
   return (
