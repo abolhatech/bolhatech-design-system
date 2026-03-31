@@ -17,8 +17,8 @@
   --bolha-muted: #71717a;
   --bolha-subtle: #a1a1aa;
 
-  /* Accent (yellow — marca BolhaTech) */
-  --bolha-accent: #ffbc2d;
+  /* Accent (dourado — marca BolhaTech) */
+  --bolha-accent: #E5A100;
   --bolha-accent-bg: #fffbeb;
   --bolha-accent-text: #92400e;
 
@@ -29,14 +29,14 @@
   --bolha-down-bg: #fef2f2;
 
   /* Community colors */
-  --bolha-community-ia: #7c3aed;
-  --bolha-community-ia-bg: #f5f3ff;
+  --bolha-community-ia: #16a34a;
+  --bolha-community-ia-bg: #f0fdf4;
   --bolha-community-frontend: #0284c7;
   --bolha-community-frontend-bg: #f0f9ff;
-  --bolha-community-backend: #059669;
-  --bolha-community-backend-bg: #ecfdf5;
-  --bolha-community-devops: #d97706;
-  --bolha-community-devops-bg: #fffbeb;
+  --bolha-community-crypto: #7c3aed;
+  --bolha-community-crypto-bg: #f5f3ff;
+  --bolha-community-ciencia: #d97706;
+  --bolha-community-ciencia-bg: #fffbeb;
 
   /* Typography */
   --bolha-font: "Inter", "Segoe UI", "Helvetica Neue", sans-serif;
@@ -66,18 +66,18 @@
 :root[data-theme='dark'] {
   color-scheme: dark;
 
-  --bolha-bg: #09090b;
-  --bolha-surface: #18181b;
-  --bolha-surface-hover: #1f1f23;
+  --bolha-bg: #0D0D0D;
+  --bolha-surface: #1C1C1C;
+  --bolha-surface-hover: #242424;
 
-  --bolha-line: #27272a;
-  --bolha-line-subtle: #202023;
+  --bolha-line: #2C2C2C;
+  --bolha-line-subtle: #202020;
 
   --bolha-text: #fafafa;
   --bolha-muted: #a1a1aa;
   --bolha-subtle: #71717a;
 
-  --bolha-accent: #fbbf24;
+  --bolha-accent: #E5A100;
   --bolha-accent-bg: #1c1507;
   --bolha-accent-text: #fcd34d;
 
@@ -86,14 +86,14 @@
   --bolha-down: #ef4444;
   --bolha-down-bg: #1f0d0d;
 
-  --bolha-community-ia: #a78bfa;
-  --bolha-community-ia-bg: #1a1030;
+  --bolha-community-ia: #4ade80;
+  --bolha-community-ia-bg: #052e16;
   --bolha-community-frontend: #38bdf8;
   --bolha-community-frontend-bg: #0c1a28;
-  --bolha-community-backend: #34d399;
-  --bolha-community-backend-bg: #052015;
-  --bolha-community-devops: #fbbf24;
-  --bolha-community-devops-bg: #1c1507;
+  --bolha-community-crypto: #a78bfa;
+  --bolha-community-crypto-bg: #1a1030;
+  --bolha-community-ciencia: #fbbf24;
+  --bolha-community-ciencia-bg: #1c1507;
 
   --bolha-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --bolha-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -213,7 +213,7 @@ textarea {
 }
 
 .bolha-button--primary:hover:not(:disabled) {
-  background: #f5b020;
+  background: #cc8e00;
 }
 
 .bolha-button--ghost {
@@ -541,14 +541,14 @@ textarea {
   color: var(--bolha-community-frontend);
 }
 
-.bolha-badge--backend {
-  background: var(--bolha-community-backend-bg);
-  color: var(--bolha-community-backend);
+.bolha-badge--crypto {
+  background: var(--bolha-community-crypto-bg);
+  color: var(--bolha-community-crypto);
 }
 
-.bolha-badge--devops {
-  background: var(--bolha-community-devops-bg);
-  color: var(--bolha-community-devops);
+.bolha-badge--ciencia {
+  background: var(--bolha-community-ciencia-bg);
+  color: var(--bolha-community-ciencia);
 }
 
 /* ─── Comment Card ─── */

@@ -208,7 +208,6 @@ Card para exibir agentes de IA do produto.
 ```tsx
 <AgentCard
   emoji="🤖"
-  name="Companion"
   description="Acompanha sua evolução e sugere conteúdos personalizados."
   meta={<><span>Ativo</span><span>12k usuários</span></>}
   actions={<Button size="sm">Ativar</Button>}
@@ -232,7 +231,6 @@ import { getCommunityColor } from 'bolhatech-design-system';
       label: 'Feed',
       items: [
         { id: 'home', label: 'Início', href: '/', active: true },
-        { id: 'trending', label: 'Em alta', href: '/trending' },
       ],
     },
     {
@@ -324,7 +322,6 @@ import { ThemeToggle } from 'bolhatech-design-system/client';
 ### Tipografia
 
 ```tsx
-<SectionHeading title="Em alta esta semana" description="Os posts mais votados das últimas 24h" />
 <Eyebrow>IA & Machine Learning</Eyebrow>
 <Text>Texto de corpo padrão com cor muted.</Text>
 

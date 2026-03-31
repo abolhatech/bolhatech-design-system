@@ -18,15 +18,15 @@ export const bolhaTokens = {
       downBg: '#fef2f2',
     },
     dark: {
-      bg: '#09090b',
-      surface: '#18181b',
-      surfaceHover: '#1f1f23',
-      line: '#27272a',
-      lineSubtle: '#202023',
+      bg: '#0D0D0D',
+      surface: '#1C1C1C',
+      surfaceHover: '#242424',
+      line: '#2C2C2C',
+      lineSubtle: '#202020',
       text: '#fafafa',
       muted: '#a1a1aa',
       subtle: '#71717a',
-      accent: '#fbbf24',
+      accent: '#E5A100',
       accentBg: '#1c1507',
       accentText: '#fcd34d',
       up: '#22c55e',
@@ -36,10 +36,10 @@ export const bolhaTokens = {
     }
   },
   community: {
-    ia: { color: '#7c3aed', bg: '#f5f3ff' },
+    ia: { color: '#16a34a', bg: '#f0fdf4' },
     frontend: { color: '#0284c7', bg: '#f0f9ff' },
-    backend: { color: '#059669', bg: '#ecfdf5' },
-    devops: { color: '#d97706', bg: '#fffbeb' },
+    crypto: { color: '#7c3aed', bg: '#f5f3ff' },
+    ciencia: { color: '#d97706', bg: '#fffbeb' },
   },
   font: {
     base: '"Inter", "Segoe UI", "Helvetica Neue", sans-serif',
@@ -74,8 +74,8 @@ export function getCommunityColor(slug: string): string {
   const map: Record<string, string> = {
     ia: 'var(--bolha-community-ia)',
     frontend: 'var(--bolha-community-frontend)',
-    backend: 'var(--bolha-community-backend)',
-    devops: 'var(--bolha-community-devops)',
+    crypto: 'var(--bolha-community-crypto)',
+    ciencia: 'var(--bolha-community-ciencia)',
   };
   return map[slug] ?? 'var(--bolha-muted)';
 }
@@ -85,8 +85,8 @@ export function getCommunityBg(slug: string): string {
   const map: Record<string, string> = {
     ia: 'var(--bolha-community-ia-bg)',
     frontend: 'var(--bolha-community-frontend-bg)',
-    backend: 'var(--bolha-community-backend-bg)',
-    devops: 'var(--bolha-community-devops-bg)',
+    crypto: 'var(--bolha-community-crypto-bg)',
+    ciencia: 'var(--bolha-community-ciencia-bg)',
   };
   return map[slug] ?? 'var(--bolha-surface)';
 }
