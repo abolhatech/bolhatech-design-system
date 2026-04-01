@@ -2,7 +2,7 @@ import React from 'react';
 import { cx } from '../../lib/cx';
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: 'primary' | 'ghost' | 'outline';
+  variant?: 'primary' | 'ghost' | 'outline' | 'contrast';
   size?: 'sm' | 'md';
   as?: 'button' | 'a';
   href?: string;
