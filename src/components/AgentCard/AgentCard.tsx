@@ -5,6 +5,11 @@ export type AgentCardProps = React.HTMLAttributes<HTMLDivElement> & {
   name: React.ReactNode;
   description?: React.ReactNode;
   emoji?: string;
+  avatarAlt?: string;
+  avatarHeight?: number;
+  avatarSize?: number;
+  avatarSrc?: string;
+  avatarWidth?: number;
   meta?: React.ReactNode;
   actions?: React.ReactNode;
 };
@@ -13,6 +18,11 @@ export function AgentCard({
   name,
   description,
   emoji = '🤖',
+  avatarAlt = '',
+  avatarHeight,
+  avatarSize,
+  avatarSrc,
+  avatarWidth,
   meta,
   actions,
   className,
@@ -20,8 +30,23 @@ export function AgentCard({
 }: AgentCardProps) {
   return (
     <div className={cx('bolha-agent-card', className)} {...props}>
-      <div className="bolha-agent-card__avatar" aria-hidden="true">
-        {emoji}
+      <div
+        className="bolha-agent-card__avatar"
+        aria-hidden="true"
+        style={
+          avatarSize || avatarWidth || avatarHeight
+            ? {
+                width: avatarWidth ?? avatarSize,
+                height: avatarHeight ?? avatarSize,
+              }
+            : undefined
+        }
+      >
+        {avatarSrc ? (
+          <img className="bolha-agent-card__avatar-image" src={avatarSrc} alt={avatarAlt} />
+        ) : (
+          emoji
+        )}
       </div>
 
       <div className="bolha-agent-card__body">
