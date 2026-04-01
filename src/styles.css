@@ -37,6 +37,10 @@
   --bolha-community-crypto-bg: #f5f3ff;
   --bolha-community-ciencia: #d97706;
   --bolha-community-ciencia-bg: #fffbeb;
+  --bolha-community-news: #db2777;
+  --bolha-community-news-bg: #fdf2f8;
+  --bolha-community-avisos: #d97706;
+  --bolha-community-avisos-bg: #fffbeb;
 
   /* Typography */
   --bolha-font: "Inter", "Segoe UI", "Helvetica Neue", sans-serif;
@@ -94,6 +98,10 @@
   --bolha-community-crypto-bg: #1a1030;
   --bolha-community-ciencia: #fbbf24;
   --bolha-community-ciencia-bg: #1c1507;
+  --bolha-community-news: #f472b6;
+  --bolha-community-news-bg: #2d0a1f;
+  --bolha-community-avisos: #fbbf24;
+  --bolha-community-avisos-bg: #1c1507;
 
   --bolha-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --bolha-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -236,9 +244,142 @@ textarea {
   background: var(--bolha-surface-hover);
 }
 
+.bolha-button--contrast {
+  border-color: transparent;
+  background: var(--bolha-text);
+  color: var(--bolha-bg);
+}
+
+.bolha-button--contrast:hover:not(:disabled) {
+  opacity: 0.92;
+}
+
 .bolha-button--sm {
   padding: 4px 10px;
   font-size: 12px;
+}
+
+/* ─── Promo Card ─── */
+
+.bolha-promo-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--bolha-line);
+  border-radius: var(--bolha-radius-md);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(148, 163, 184, 0.08)),
+    var(--bolha-surface);
+  color: var(--bolha-text);
+  transition:
+    border-color 120ms ease,
+    background 120ms ease,
+    transform 120ms ease;
+}
+
+.bolha-promo-card:hover {
+  border-color: color-mix(in srgb, var(--bolha-text) 15%, var(--bolha-line));
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(148, 163, 184, 0.1)),
+    var(--bolha-surface-hover);
+  transform: translateY(-1px);
+}
+
+.bolha-promo-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bolha-muted) 14%, transparent);
+  color: var(--bolha-text);
+  flex-shrink: 0;
+}
+
+.bolha-promo-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.bolha-promo-card__title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.bolha-promo-card__description {
+  font-size: 12px;
+  color: var(--bolha-muted);
+  line-height: 1.35;
+}
+
+:root:not([data-theme='dark']) .bolha-promo-card {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.96)),
+    var(--bolha-surface);
+}
+
+:root:not([data-theme='dark']) .bolha-promo-card__icon {
+  color: #475569;
+}
+
+/* ─── Editorial Signup ─── */
+
+.bolha-editorial-signup {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--bolha-line);
+  border-radius: calc(var(--bolha-radius-lg) + 4px);
+  background:
+    radial-gradient(circle at top right, rgba(148, 163, 184, 0.12), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 100%),
+    var(--bolha-surface);
+}
+
+.bolha-editorial-signup__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 32ch;
+}
+
+.bolha-editorial-signup__eyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #dbe4f0;
+}
+
+.bolha-editorial-signup__description {
+  margin: 0;
+  color: var(--bolha-text);
+  line-height: 1.55;
+}
+
+.bolha-editorial-signup__form {
+  width: 100%;
+}
+
+:root:not([data-theme='dark']) .bolha-editorial-signup {
+  border-color: rgba(15, 23, 42, 0.08);
+  background:
+    radial-gradient(circle at top right, rgba(148, 163, 184, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.98)),
+    #ffffff;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.05);
+}
+
+:root:not([data-theme='dark']) .bolha-editorial-signup__eyebrow {
+  color: #94a3b8;
 }
 
 /* ─── Site Header ─── */
@@ -549,6 +690,16 @@ textarea {
 .bolha-badge--ciencia {
   background: var(--bolha-community-ciencia-bg);
   color: var(--bolha-community-ciencia);
+}
+
+.bolha-badge--news {
+  background: var(--bolha-community-news-bg);
+  color: var(--bolha-community-news);
+}
+
+.bolha-badge--avisos {
+  background: var(--bolha-community-avisos-bg);
+  color: var(--bolha-community-avisos);
 }
 
 /* ─── Comment Card ─── */

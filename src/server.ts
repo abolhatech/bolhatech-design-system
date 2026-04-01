@@ -2,6 +2,7 @@ export { bolhaTokens, getCommunityColor, getCommunityBg } from './tokens';
 
 // Layout
 export { Container } from './components/Container/Container';
+export { EditorialSignup } from './components/EditorialSignup/EditorialSignup';
 export { Surface } from './components/Surface/Surface';
 export { SiteHeader } from './components/SiteHeader/SiteHeader';
 export { SidebarNav } from './components/SidebarNav/SidebarNav';
@@ -20,6 +21,7 @@ export { ArticleHeader } from './components/ArticleHeader/ArticleHeader';
 export { Button } from './components/Button/Button';
 export { Input } from './components/Input/Input';
 export { Pagination } from './components/Pagination/Pagination';
+export { PromoCard } from './components/PromoCard/PromoCard';
 
 // Content cards
 export { NewsCard } from './components/NewsCard/NewsCard';
