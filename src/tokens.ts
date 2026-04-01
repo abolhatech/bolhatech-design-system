@@ -40,6 +40,8 @@ export const bolhaTokens = {
     frontend: { color: '#0284c7', bg: '#f0f9ff' },
     crypto: { color: '#7c3aed', bg: '#f5f3ff' },
     ciencia: { color: '#d97706', bg: '#fffbeb' },
+    news: { color: '#db2777', bg: '#fdf2f8' },
+    avisos: { color: '#d97706', bg: '#fffbeb' },
   },
   font: {
     base: '"Inter", "Segoe UI", "Helvetica Neue", sans-serif',
