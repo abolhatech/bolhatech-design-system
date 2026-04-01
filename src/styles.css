@@ -317,13 +317,13 @@ textarea {
   line-height: 1.35;
 }
 
-:root:not([data-theme='dark']) .bolha-promo-card {
+:root[data-theme='light'] .bolha-promo-card {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.96)),
     var(--bolha-surface);
 }
 
-:root:not([data-theme='dark']) .bolha-promo-card__icon {
+:root[data-theme='light'] .bolha-promo-card__icon {
   color: #475569;
 }
 
@@ -369,7 +369,7 @@ textarea {
   width: 100%;
 }
 
-:root:not([data-theme='dark']) .bolha-editorial-signup {
+:root[data-theme='light'] .bolha-editorial-signup {
   border-color: rgba(15, 23, 42, 0.08);
   background:
     radial-gradient(circle at top right, rgba(148, 163, 184, 0.08), transparent 34%),
@@ -378,7 +378,7 @@ textarea {
   box-shadow: 0 12px 40px rgba(15, 23, 42, 0.05);
 }
 
-:root:not([data-theme='dark']) .bolha-editorial-signup__eyebrow {
+:root[data-theme='light'] .bolha-editorial-signup__eyebrow {
   color: #94a3b8;
 }
 
